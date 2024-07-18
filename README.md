@@ -10,8 +10,12 @@ This includes using mapping input to feature space to use linear programming and
 This allows me to create larger weight vectors to classify the data.
 <img width="50" alt="LargerWeight" src="https://github.com/user-attachments/assets/8ee75159-4932-4866-92e9-7da98881ea30">
 
-Report shows test results using Perceptron, Linprog, Hard-SVM, and Soft-SVM on both linear and non-linearly classifiable data.
+The report shows speed & accuracy test results using Perceptron, Linprog, Hard-SVM, and Soft-SVM on both linear and non-linearly classifiable data using this feature space. 
 
-On Support Vector Machine (SVM), quadratic programming with Hard-SVM, linear programming algorithms using feature mapping Kernels functions. 
+I also use Kernalized algorithms for the Hard-SVM, which is applied when the loss function is calculation during gradient descent. Kernel algorithms do not use feature mapping and rely on the original training data, using them to classify new data. 
 
-Neural nets & Soft-SVM using Gaussian Kernel successfully classified data. 
+I compare results of feature mapping with Hard-SVM to using kernelized SVM with a Gaussian and Polynomial kernel function. 
+
+Lastly, I created a larger neural net using backpropagation & the sigmoid acivation function, and compare that to the results of the Soft-SVM using Gaussian Kernelized hinge loss function. 
+
+Report of results on test data shows that neural nets are capable of clearning to classify non-linearly classifiable data faster than the Gaussian Kernelized Soft-SVM. 
