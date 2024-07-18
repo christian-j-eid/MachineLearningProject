@@ -3,7 +3,12 @@ In this project, I created a neural net from scratch using gradient descent with
 
 In addition, I coded various algorithms that classified non-linearly separable data tested their efficiency and accuracy. 
 
-This includes using mapping input to feature space to use linear programming and linear algorithms. EX: Input [1, x1, x2] gets mapped to [1, x1, x2, x2/x1, x1/x2, x1x2], allowing us to use more weight vectors.
+This includes using mapping input to feature space to use linear programming and linear algorithms. In my project, I mapped each instance of data x to a feature space such that
+
+<img width="137" alt="FeatureSpace" src="https://github.com/user-attachments/assets/d8ae9583-a0da-4855-8fbe-0d337a71e999">
+
+This allows me to create larger weight vectors to classify the data.
+<img width="50" alt="LargerWeight" src="https://github.com/user-attachments/assets/8ee75159-4932-4866-92e9-7da98881ea30">
 
 Report shows test results using Perceptron, Linprog, Hard-SVM, and Soft-SVM on both linear and non-linearly classifiable data.
 
